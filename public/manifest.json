@@ -1,0 +1,18 @@
+{
+  "short_name": "WeatherGlobe",
+  "name": "WeatherGlobe — Bangladesh & Global Weather",
+  "icons": [
+    {
+      "src": "/logo.svg",
+      "type": "image/svg+xml",
+      "sizes": "192x192 512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0f172a",
+  "theme_color": "#0f766e",
+  "display": "standalone",
+  "orientation": "portrait",
+  "description": "Bangladesh-First Global Weather Application with 50-language support, GPS location, live forecasts, minute-by-minute rain alerts, and pro agri-weather modes."
+}

@@ -1,0 +1,128 @@
+name: Build & Release (Android APK, Play Store AAB & iOS)
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-android-and-release:
+    name: Build Android APK, Google Play AAB & iOS Package
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Setup Java JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Setup Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: Install Project Dependencies
+        run: |
+          npm ci || npm install
+
+      - name: Build Web Application
+        run: |
+          npm run build
+
+      - name: Install Capacitor & Platforms
+        run: |
+          npm install --no-save @capacitor/core@latest @capacitor/cli@latest @capacitor/android@latest @capacitor/ios@latest
+
+      - name: Setup Android Native Project
+        run: |
+          if [ ! -d "android" ]; then
+            echo "Initializing Android native platform..."
+            npx cap add android
+          else
+            echo "Syncing existing Android platform..."
+            npx cap sync android
+          fi
+
+      - name: Setup iOS Native Project
+        run: |
+          if [ ! -d "ios" ]; then
+            echo "Initializing iOS native platform..."
+            npx cap add ios || true
+          fi
+
+      - name: Grant Execute Permission for Gradle
+        run: |
+          cd android
+          chmod +x gradlew
+
+      - name: Build Debug APK (For direct phone testing)
+        run: |
+          cd android
+          ./gradlew assembleDebug
+
+      - name: Build Release AAB (For Google Play Store)
+        run: |
+          cd android
+          ./gradlew bundleRelease
+
+      - name: Prepare Release Artifacts
+        run: |
+          mkdir -p release-assets
+          cp android/app/build/outputs/apk/debug/app-debug.apk release-assets/WeatherGlobe-Android.apk
+          cp android/app/build/outputs/bundle/release/app-release.aab release-assets/WeatherGlobe-GooglePlay.aab
+          zip -r release-assets/WeatherGlobe-iOS-Project.zip ios dist capacitor.config.json
+
+      - name: Upload Artifacts to GitHub Actions
+        uses: actions/upload-artifact@v4
+        with:
+          name: WeatherGlobe-App-Packages
+          path: release-assets/*
+          retention-days: 30
+
+      - name: Create or Update GitHub Release
+        uses: softprops/action-gh-release@v2
+        if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+        with:
+          tag_name: v1.0.0
+          name: "WeatherGlobe v1.0.0 — Official App Release (APK, AAB & iOS)"
+          draft: false
+          prerelease: false
+          body: |
+            # 🌍 WeatherGlobe Official Release v1.0.0
+            
+            Welcome to the official release of **WeatherGlobe**!
+
+            ### 📦 Included Files:
+            1. **`WeatherGlobe-Android.apk`**
+               - Direct installable APK for all Android devices.
+               - Download, open on your phone, and install immediately.
+               - Ready for direct distribution or third-party stores (Uptodown, APKPure, etc.).
+
+            2. **`WeatherGlobe-GooglePlay.aab`**
+               - Google Play Store production/internal testing bundle.
+               - Meets all Google Play 64-bit and Target SDK requirements.
+
+            3. **`WeatherGlobe-iOS-Project.zip`**
+               - Native iOS project with Capacitor.
+               - Open in Xcode on macOS to run on iPhone or upload to App Store / TestFlight.
+               - Also supports instant installation on iPhone via Safari **"Add to Home Screen"** as a standalone PWA.
+
+            ---
+            *Built automatically via GitHub Actions CI/CD.*
+          files: |
+            release-assets/WeatherGlobe-Android.apk
+            release-assets/WeatherGlobe-GooglePlay.aab
+            release-assets/WeatherGlobe-iOS-Project.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

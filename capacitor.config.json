@@ -1,0 +1,9 @@
+{
+  "appId": "com.weatherglobe.app",
+  "appName": "WeatherGlobe",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": {
+    "androidScheme": "https"
+  }
+}
