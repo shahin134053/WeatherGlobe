@@ -14,7 +14,7 @@ export interface AppUpdateInfo {
 }
 
 export const CURRENT_APP_VERSION = '2.1.0';
-const GITHUB_REPO = 'shahin134053/WeatherGlobe';
+const GITHUB_REPO = 'shahin134053/WeatherGuro';
 const UPDATE_CHECK_INTERVAL_MS = 15 * 60 * 1000; // Check every 15 minutes
 
 type UpdateListener = (update: AppUpdateInfo | null) => void;

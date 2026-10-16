@@ -10,11 +10,11 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/shahin134053/WeatherGlobe/releases/latest">
-    <img src="https://img.shields.io/github/v/release/shahin134053/WeatherGlobe?color=f59e0b&label=Latest%20Release&style=for-the-badge&logo=github" alt="WeatherGuru Gold Release" />
+  <a href="https://github.com/shahin134053/WeatherGuro/releases/latest">
+    <img src="https://img.shields.io/github/v/release/shahin134053/WeatherGuro?color=f59e0b&label=Latest%20Release&style=for-the-badge&logo=github" alt="WeatherGuru Gold Release" />
   </a>
-  <a href="https://github.com/shahin134053/WeatherGlobe/actions">
-    <img src="https://img.shields.io/github/actions/workflow/status/shahin134053/WeatherGlobe/android.yml?style=for-the-badge&label=Build%20Status&logo=android" alt="Build Status" />
+  <a href="https://github.com/shahin134053/WeatherGuro/actions">
+    <img src="https://img.shields.io/github/actions/workflow/status/shahin134053/WeatherGuro/android.yml?style=for-the-badge&label=Build%20Status&logo=android" alt="Build Status" />
   </a>
   <a href="https://ais-pre-3eg6ou72akq4n7v5m3sqju-115405497061.asia-east1.run.app">
     <img src="https://img.shields.io/badge/Web_PWA-Live_Online-0f766e?style=for-the-badge&logo=pwa" alt="Live Demo" />
@@ -25,15 +25,15 @@
 
 ## 📌 পিন করা অফিসিয়াল রিলিজ: WeatherGuru Gold (Pinned Release)
 
-> 🔗 **অফিসিয়াল গিটহাব রিলিজ পেজ:** [**https://github.com/shahin134053/WeatherGlobe/releases/latest**](https://github.com/shahin134053/WeatherGlobe/releases/latest)
+> 🔗 **অফিসিয়াল গিটহাব রিলিজ পেজ:** [**https://github.com/shahin134053/WeatherGuro/releases/latest**](https://github.com/shahin134053/WeatherGuro/releases/latest)
 
-অ্যাপের নাম এবং রিলিজের নাম একই রেখে **WeatherGuru Gold (ওয়েদার গুরু গোল্ড)**-এর সর্বশেষ রিলিজ ফাইলগুলো নিচে পিন করা হলো। যেকোনো ডিভাইস থেকে ব্যবহারকারীরা সরাসরি ১-ক্লিকে ডাউনলোড করতে পারবেন:
+অ্যাপের নাম এবং রিলিজের নাম একই রেখে **WeatherGuru Gold (ওয়েদার গুরু গোল্ড)**-এর অফিসিয়াল প্যাকেজগুলো নিচে পিন করে দেওয়া হলো। এখান থেকে যেকোনো ব্যবহারকারী সরাসরি সর্বশেষ ভার্সনটি ডাউনলোড করতে পারবেন:
 
 | প্ল্যাটফর্ম (Platform) | ফরম্যাট | সরাসরি ডাউনলোড লিংক (Direct Download Link) | বিবরণ ও ব্যবহার |
 | :--- | :--- | :--- | :--- |
-| **🤖 Android ফোন/ট্যাব** | `.APK` | [📥 **WeatherGuru-Gold-Android.apk ডাউনলোড করুন**](https://github.com/shahin134053/WeatherGlobe/releases/latest/download/WeatherGuru-Gold-Android.apk) | যেকোনো অ্যান্ড্রয়েড ফোনে সরাসরি ইনস্টল করে চালানোর জন্য সম্পূর্ণ রেডি ফাইল (Uptodown, APKPure বা ওয়েবসাইটে পাবলিশের উপযুক্ত)। |
-| **🏬 Google Play Store** | `.AAB` | [📦 **WeatherGuru-Gold-PlayStore.aab ডাউনলোড করুন**](https://github.com/shahin134053/WeatherGlobe/releases/latest/download/WeatherGuru-Gold-PlayStore.aab) | গুগল প্লে কনসোলের জন্য অফিসিয়াল প্রোডাকশন বান্ডেল (Google Play 64-bit ও Target SDK কমপ্লায়েন্ট)। |
-| **🍎 iPhone / iPad (iOS)** | `.ZIP` | [🍏 **WeatherGuru-Gold-iOS.zip ডাউনলোড করুন**](https://github.com/shahin134053/WeatherGlobe/releases/latest/download/WeatherGuru-Gold-iOS.zip) | Apple iPhone-এর জন্য সম্পূর্ণ Capacitor iOS প্রজেক্ট ফাইল (Xcode ও TestFlight-এ বিল্ডের উপযোগী)। |
+| **🤖 Android ফোন/ট্যাব** | `.APK` | [📥 **WeatherGuru-Gold-Android.apk ডাউনলোড করুন**](https://github.com/shahin134053/WeatherGuro/releases/latest/download/WeatherGuru-Gold-Android.apk) | যেকোনো অ্যান্ড্রয়েড ফোনে সরাসরি ইনস্টল করে চালানোর জন্য সম্পূর্ণ রেডি ফাইল (Uptodown, APKPure বা ওয়েবসাইটে পাবলিশের উপযুক্ত)। |
+| **🏬 Google Play Store** | `.AAB` | [📦 **WeatherGuru-Gold-PlayStore.aab ডাউনলোড করুন**](https://github.com/shahin134053/WeatherGuro/releases/latest/download/WeatherGuru-Gold-PlayStore.aab) | গুগল প্লে কনসোলের জন্য অফিসিয়াল প্রোডাকশন বান্ডেল (Google Play 64-bit ও Target SDK কমপ্লায়েন্ট)। |
+| **🍎 iPhone / iPad (iOS)** | `.ZIP` | [🍏 **WeatherGuru-Gold-iOS.zip ডাউনলোড করুন**](https://github.com/shahin134053/WeatherGuro/releases/latest/download/WeatherGuru-Gold-iOS.zip) | Apple iPhone-এর জন্য সম্পূর্ণ Capacitor iOS প্রজেক্ট ফাইল (Xcode ও TestFlight-এ বিল্ডের উপযোগী)। |
 | **🌐 ইনস্ট্যান্ট ওয়েব PWA** | Web App | [🚀 **WeatherGuru Gold সরাসরি চালান**](https://ais-pre-3eg6ou72akq4n7v5m3sqju-115405497061.asia-east1.run.app) | কোনো কিছু ডাউনলোড না করে ফোনের ব্রাউজার থেকে সরাসরি হোম স্ক্রিনে যুক্ত করার সুবিধা। |
 
 > 💡 **স্বয়ংক্রিয় আপডেট নোট:** উপরের ডাউনলোড লিংকগুলো গিটহাবের ডাইনামিক `releases/latest/download` রাউটে পিন করা। তাই পরবর্তীতে প্রতিটি আপডেটে স্বয়ংক্রিয়ভাবে সর্বদা **WeatherGuru Gold-এর সবচেয়ে লেটেস্ট ভার্সনটাই** ডাউনলোড হবে।
@@ -43,7 +43,7 @@
 ### 📱 কীভাবে ফোনে ইনস্টল করবেন?
 
 #### অ্যান্ড্রয়েড (Android) ব্যবহারকারীদের জন্য:
-1. উপরে থাকা [**WeatherGuru-Gold-Android.apk ডাউনলোড করুন**](https://github.com/shahin134053/WeatherGlobe/releases/latest/download/WeatherGuru-Gold-Android.apk) লিংকে ক্লিক করুন।
+1. উপরে থাকা [**WeatherGuru-Gold-Android.apk ডাউনলোড করুন**](https://github.com/shahin134053/WeatherGuro/releases/latest/download/WeatherGuru-Gold-Android.apk) লিংকে ক্লিক করুন।
 2. ফাইলটি ডাউনলোড শেষ হলে আপনার ফোনের নোটিফিকেশন বা ফাইল ম্যানেজার থেকে ফাইলটি ওপেন করুন।
 3. ফোনে যদি প্রথমবারের মতো অনুমতি চায়, তবে *"Allow from this source"* দিয়ে **Install** বাটনে চাপুন।
 4. ইনস্টল শেষ হওয়া মাত্রই **WeatherGuru Gold** অ্যাপটি আপনার ফোনে পুরোদমে কাজ করবে!
@@ -87,5 +87,5 @@ npm run build
 <p align="center">
   <b>WeatherGuru Gold (ওয়েদার গুরু গোল্ড)</b><br>
   ডেভেলপার: <b>Md Shahin</b> | Pixel Retouch Pro (PRP)<br>
-  অফিশিয়াল গিটহাব: <a href="https://github.com/shahin134053/WeatherGlobe">github.com/shahin134053/WeatherGlobe</a>
+  অফিশিয়াল গিটহাব: <a href="https://github.com/shahin134053/WeatherGuro">github.com/shahin134053/WeatherGuro</a>
 </p>
