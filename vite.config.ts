@@ -47,6 +47,7 @@ const ttsProxyPlugin = (): Plugin => ({
 
 export default defineConfig(() => {
   return {
+    base: './',
     plugins: [react(), tailwindcss(), ttsProxyPlugin()],
     resolve: {
       alias: {
