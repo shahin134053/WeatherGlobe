@@ -3,25 +3,25 @@
   "name": "WeatherGuru Gold — ওয়েদার গুরু গোল্ড",
   "icons": [
     {
-      "src": "/icon-192.png",
+      "src": "./icon-192.png",
       "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "/icon-512.png",
+      "src": "./icon-512.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "any maskable"
     },
     {
-      "src": "/logo.svg",
+      "src": "./logo.svg",
       "type": "image/svg+xml",
       "sizes": "any",
       "purpose": "any maskable"
     }
   ],
-  "start_url": "/",
+  "start_url": "./",
   "background_color": "#0f172a",
   "theme_color": "#0f766e",
   "display": "standalone",

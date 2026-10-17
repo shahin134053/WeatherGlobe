@@ -52,7 +52,7 @@ export function registerAutoUpdateServiceWorker(): void {
   // Avoid registering SW in development mode if not desired, but here we enable for full PWA support
   window.addEventListener('load', () => {
     navigator.serviceWorker
-      .register('/sw.js')
+      .register('./sw.js')
       .then((registration) => {
         console.log('WeatherGuru ServiceWorker registered successfully');
 
